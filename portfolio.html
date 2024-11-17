@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolioCSS.css">
+</head>
+<body>
+    <script src="portfolioJS.js"></script>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <section id="image-section">
+        <h2>Profile Picture</h2>
+        <img src="profile.jpg" alt="Profile Picture">
+    </section>
+
+    <section id="biodata-section">
+        <h2>Biodata</h2>
+        <p><strong>Name:</strong> Aaryan Shrivastav</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Education:</strong> Bachelor’s in Computer Science</p>
+        <p><strong>Experience:</strong> Projects and Two Internships</p>
+        <button class="modal-button" onclick="openModal()">Contact Me</button>
+    </section>
+
+    <section id="skills-section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Dart</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="links-section">
+        <h2>Links</h2>
+        <a href="https://github.com/aaryanshrivastav" target="_blank">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/aaryan-shrivastav-110575305/" target="_blank">LinkedIn Profile</a>
+    </section>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
